@@ -39,8 +39,30 @@
 	</dependencies>
 
 	<build>
-		<!-- <plugins>
-			<plugin>
+		 <plugins>
+		
+		
+		<plugin>
+              <groupId>com.google.cloud.tools</groupId>
+              <artifactId>jib-maven-plugin</artifactId>
+              <version>2.1.0</version>
+              <configuration>
+                <from>
+                    <image>conf_server_image:latest</image>
+                </from>
+                <to>
+                  <image>${project.artifactId}:${project.version}</image>
+                </to>
+                <container>
+                    <jvmFlags>
+                        <jvmFlag>-Xms512m</jvmFlag>
+                        <jvmFlag>-Xmx512m</jvmFlag>
+                    </jvmFlags>
+                </container>
+              </configuration>
+            </plugin>
+		
+		<!--	<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
@@ -65,8 +87,8 @@
             </goals>
             </execution>
             </executions>
-        </plugin>
-		</plugins> -->
+        </plugin> -->
+		</plugins> 
 		<finalName>spring-boot-docker</finalName>
 	</build>
 
