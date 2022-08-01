@@ -67,7 +67,7 @@
             </executions>
         </plugin>
 		</plugins> -->
-		<finalName>spring-boot-docker-maven</finalName>
+		<finalName>spring-boot-docker</finalName>
 	</build>
 
 
